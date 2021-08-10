@@ -154,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print("new message");
 
 
-      if(data["sid"]==sid||data["rid"]==rid)
+      if(data["sid"]==rid||data["sid"]==sid)
       sk.addResponse({"message": data["message"], "sid": sid, "rid": rid});
     });
     socket!.onDisconnect((_) {
